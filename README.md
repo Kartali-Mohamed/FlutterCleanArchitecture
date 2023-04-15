@@ -12,8 +12,7 @@
 ## Initial project
 <span dir="rtl" align="right">
 أولا سنقوم بإنشاء مشروع Flutter جديد وإضافة المكتبات اللازمة خلال المشروع وايضا تقسيم المشروع إلى المجلدات المناسبة للبنية المستخدمة وإضافة ملف الثيم.
-
-مجلد features : يحتوي على كل مميزات features خاصة بالتطبيق، و كل ميزة نضعها في مجلد خاص بها ونقسمه الى البنية الخاصة ب clean architecture الموضحة في feature_exemple.
+- مجلد features : يحتوي على كل مميزات features خاصة بالتطبيق، و كل ميزة نضعها في مجلد خاص بها ونقسمه الى البنية الخاصة ب clean architecture الموضحة في feature_exemple.
 </span>
 <br/>
 <br/>
@@ -31,9 +30,7 @@
 
 ## Data layer
 <span dir="rtl" align="right">
-بعد ذلك نبدأ بالdata layer ونقوم بكتابة ال model والبدء بتحقيق (implements) الrepository الخاصة بال domain layer.
-
-ثم نكمل العمل على datasources بانشاء كلاس ال Local Data Source وايضاً ال Remote Data Source و تحقيقهما (implements) .
+بعد ذلك نبدأ بالdata layer ونقوم بكتابة ال model والبدء بتحقيق (implements) الrepository الخاصة بال domain layer. ثم نكمل العمل على datasources بانشاء كلاس ال Local Data Source وايضاً ال Remote Data Source و تحقيقهما (implements).
 </span>
 <br/>
 <br/>
@@ -52,8 +49,7 @@
 ### Dependency injection
 <span dir="rtl" align="right">
 بعد ذلك نصل الى ال Dependency injection ، ونقوم بمعالجتها باستخدام مكتبة get_it.
-
-ننشأ ملف injection_container و نكتب فيه جميع dependency injection خاصين بكل ال features.
+- ننشأ ملف injection_container و نكتب فيه جميع dependency injection خاصين بكل ال features.
 </span>
 <br/>
 <br/>
