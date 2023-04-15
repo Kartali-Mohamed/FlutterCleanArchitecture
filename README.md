@@ -11,7 +11,6 @@
 
 ## Initial project
 <span dir="rtl" align="right">
-
 - أولا سنقوم بإنشاء مشروع Flutter جديد وإضافة المكتبات اللازمة خلال المشروع وايضا تقسيم المشروع إلى المجلدات المناسبة للبنية المستخدمة وإضافة ملف الثيم.
 
 - مجلد features : يحتوي على كل مميزات features خاصة بالتطبيق، و كل ميزة نضعها في مجلد خاص بها ونقسمه الى البنية الخاصة ب clean architecture الموضحة في feature_exemple.
@@ -53,7 +52,6 @@
 
 ### Dependency injection
 <span dir="rtl" align="right">
-
 - بعد ذلك نصل الى ال Dependency injection ، ونقوم بمعالجتها باستخدام مكتبة get_it.
 
 - ننشأ ملف injection_container و نكتب فيه جميع dependency injection خاصين بكل ال features.
