@@ -24,7 +24,7 @@
 ## Domain layer
 <span dir="rtl" align="right">
 
-- ثانيا نقوم بإنشاء ال entity الخاصة بطبقة domain ومن ثم كتابة الrepository إضافة جميع الuse cases الخاصة بال feature.
+- ثانيا نقوم بإنشاء ال entity الخاصة بطبقة domain ومن ثم كتابة الrepository و إضافة جميع الuse cases الخاصة بال feature.
 </span>
 <br/>
 <br/>
