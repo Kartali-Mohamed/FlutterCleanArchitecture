@@ -1,6 +1,6 @@
-# Flutter clean architecture - Posts app بالعربي
+# Flutter clean architecture
 
-## clean architecture
+## Clean Architecture
 <span dir="rtl" align="right">
     هذا المشروع هو تطبيق الClean architecture الخاصة بRobert Martin المعروف بUncle Bob , ايضاً يحوي على الطريقة الصحيحة للبدء بتطبيق هذا البنية وكيفية تقسيم المشروع الخاص بنا في Flutter بحيث يتوافق مع هذه البنية .
 </span>
@@ -9,7 +9,7 @@
 
 
 
-## Initial project , Add and explain required dependencies
+## Initial project
 <span dir="rtl" align="right">
 أولا سنقوم بإنشاء مشروع Flutter جديد وإضافة المكتبات اللازمة خلال المشروع وايضا تقسيم المشروع إلى المجلدات المناسبة للبنية المستخدمة وإضافة ملف الثيم.
 مجلد features : يحتوي على كل مميزات features خاصة بالتطبيق، و كل ميزة نضعها في مجلد خاص بها ونقسمه الى البنية الخاصة ب clean architecture الموضحة في feature_exemple.
@@ -39,7 +39,7 @@
 
 
 ## Presentation layer 
-# Implement bloc in presentation layer 
+### Implement bloc in presentation layer 
 <span dir="rtl" align="right">
 ثم نبدأ بال presentation layer وتحديداً بمعالجة موضوع ال state management وسنقوم بكتابة جميع ال bloc خاص بال feature.
 </span>
@@ -47,7 +47,7 @@
 <br/>
 
 
-# Dependency injection
+### Dependency injection
 <span dir="rtl" align="right">
 بعد ذلك نصل الى ال Dependency injection ، ونقوم بمعالجتها باستخدام مكتبة get_it.
 ننشأ ملف injection_container و نكتب فيه جميع dependency injection خاصين بكل ال features.
@@ -56,7 +56,7 @@
 <br/>
 
 
-# Create Page in pages in presentation layer
+### Create Page in pages in presentation layer
 <span dir="rtl" align="right">
 وأخيرا نبدأ بإنشاء و بكتابة الشاشات الInterfaces خاصة بال feature.
 </span>
