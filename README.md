@@ -75,7 +75,7 @@
 ### How does it wrok
 <span dir="rtl" align="right">
 
-- اولا نبعث event لل bloc من ال pages.
+- اولا نبعث event لل bloc من ال pages في طبقة ال presentation.
 - ال bloc بعد تلقي event يحكي مع ال usecase.
 - ال usecase هي بدورها تحكي مع ال repository.
 - ال repository يتحقق من اذا الجهاز فيه انترنت، اذا فيه انترنت يحكي مع ال remote data source و اذا لا يوجد انترنت يذهب لل local data source. 
