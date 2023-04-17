@@ -70,7 +70,6 @@
 <br/>
 <br/>
 
-![](clean-architecture.png)
 
 ### How does it wrok
 <span dir="rtl" align="right">
@@ -87,4 +86,6 @@
 </span>
 <br/>
 <br/>
+
+![](clean-architecture.png)
 
