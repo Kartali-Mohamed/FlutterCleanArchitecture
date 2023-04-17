@@ -73,7 +73,7 @@
 ### How does it wrok
 <span dir="rtl" align="right">
 
-- اولا نعمل event لل bloc.
+- اولا نبعث event لل bloc من ال pages.
 - ال bloc بعد تلقي event يحكي مع ال usecase.
 - ال usecase هي بدورها تحكي مع ال repository.
 - ال repository يتحقق من اذا الجهاز فيه انترنت، اذا فيه انترنت يحكي مع ال remote data source و اذا لا يوجد انترنت يذهب لل local data source. 
@@ -81,7 +81,7 @@
 - ال repository يحول  ال model الى entitie.
 - ترجع هذه ال entitie الى usecase.
 - ثم نستعمل هذه ال usecase في ال bloc.
-- و أخيرا نستعمل نوع ال response من ال usecase لتحديد ال state في هذا event.
+- و أخيرا نستعمل نوع ال response من ال usecase لتحديد ال state في هذا page.
 </span>
 <br/>
 <br/>
