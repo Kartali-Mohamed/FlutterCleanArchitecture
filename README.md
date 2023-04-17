@@ -69,3 +69,20 @@
 </span>
 <br/>
 <br/>
+
+### How does it wrok
+<span dir="rtl" align="right">
+
+- اولا نعمل event لل bloc.
+- ال bloc بعد تلقي event يحكي مع ال usecase.
+- ال usecase هي بدورها تحكي مع ال repository.
+- ال repository يتحقق من اذا الجهاز فيه انترنت، اذا فيه انترنت يحكي مع ال remote data source و اذا لا يوجد انترنت يذهب لل local data source. 
+- مثلا يوجد انترنت، ال remote data source يبعث request لل api، هذا الاخير يرجع response، ثم هذه data source تحول response ل model و تعيدو على repository.
+- ال repository يحول  ال model الى entitie.
+- ترجع هذه ال entitie الى usecase.
+- ثم نستعمل هذه ال usecase في ال bloc.
+- و أخيرا نستعمل نوع ال response من ال usecase لتحديد ال state في هذا event.
+</span>
+<br/>
+<br/>
+
