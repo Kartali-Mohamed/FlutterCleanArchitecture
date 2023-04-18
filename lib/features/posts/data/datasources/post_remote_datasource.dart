@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:clean_architecture_app/core/error/exceptions.dart';
-import 'package:clean_architecture_app/features/posts/data/models/post_model.dart';
+import '../../../../core/error/exceptions.dart';
+import '../models/post_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/retry.dart';

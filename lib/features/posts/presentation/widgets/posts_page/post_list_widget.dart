@@ -1,11 +1,10 @@
-import 'package:clean_architecture_app/features/posts/domain/entities/post.dart';
+import '../../../domain/entities/post.dart';
+import '../../pages/detail_post_page.dart';
 import 'package:flutter/material.dart';
 
 class PostListWidget extends StatelessWidget {
   final List<Post> posts;
-  final void Function()? onTap;
-  const PostListWidget({Key? key, required this.posts, this.onTap})
-      : super(key: key);
+  const PostListWidget({Key? key, required this.posts}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,10 @@ class PostListWidget extends StatelessWidget {
             style: const TextStyle(fontSize: 16),
           ),
           contentPadding: const EdgeInsets.symmetric(horizontal: 10),
-          onTap: onTap,
+          onTap: () {
+            Navigator.of(context).push(MaterialPageRoute(
+                builder: (_) => DetailPostPage(post: posts[index])));
+          },
         );
       },
       separatorBuilder: (BuildContext context, int index) {

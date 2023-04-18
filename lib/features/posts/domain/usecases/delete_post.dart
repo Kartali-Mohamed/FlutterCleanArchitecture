@@ -1,5 +1,5 @@
-import 'package:clean_architecture_app/features/posts/domain/repositories/post_repository.dart';
-import 'package:clean_architecture_app/core/error/failures.dart';
+import '../repositories/post_repository.dart';
+import '../../../../core/error/failures.dart';
 import 'package:dartz/dartz.dart';
 
 class DeletePostUseCase {

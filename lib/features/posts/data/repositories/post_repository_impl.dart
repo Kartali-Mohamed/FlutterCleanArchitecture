@@ -1,11 +1,11 @@
-import 'package:clean_architecture_app/core/error/exceptions.dart';
-import 'package:clean_architecture_app/core/network/network_info.dart';
-import 'package:clean_architecture_app/features/posts/data/datasources/post_local_datasource.dart';
-import 'package:clean_architecture_app/features/posts/data/datasources/post_remote_datasource.dart';
-import 'package:clean_architecture_app/features/posts/data/models/post_model.dart';
-import 'package:clean_architecture_app/features/posts/domain/entities/post.dart';
-import 'package:clean_architecture_app/core/error/failures.dart';
-import 'package:clean_architecture_app/features/posts/domain/repositories/post_repository.dart';
+import '../../../../core/error/exceptions.dart';
+import '../../../../core/network/network_info.dart';
+import '../datasources/post_local_datasource.dart';
+import '../datasources/post_remote_datasource.dart';
+import '../models/post_model.dart';
+import '../../domain/entities/post.dart';
+import '../../../../core/error/failures.dart';
+import '../../domain/repositories/post_repository.dart';
 import 'package:dartz/dartz.dart';
 
 class PostRepositoryImpl implements PostRepository {
@@ -23,6 +23,7 @@ class PostRepositoryImpl implements PostRepository {
     if (await networkInfo.isConnected) {
       try {
         List<PostModel> remoteData = await remoteDataSource.getAllPosts();
+        localDataSource.cachePosts(remoteData);
         return Right(remoteData);
       } on ServeurException {
         return Left(ServeurFailure());

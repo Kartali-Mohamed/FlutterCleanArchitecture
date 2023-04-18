@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
-import 'package:clean_architecture_app/core/error/failures.dart';
-import 'package:clean_architecture_app/core/strings/failures.dart';
-import 'package:clean_architecture_app/features/posts/domain/entities/post.dart';
-import 'package:clean_architecture_app/features/posts/domain/usecases/get_all_posts.dart';
+import '../../../../../core/error/failures.dart';
+import '../../../../../core/strings/failures.dart';
+import '../../../domain/entities/post.dart';
+import '../../../domain/usecases/get_all_posts.dart';
 import 'package:equatable/equatable.dart';
 
 part 'posts_event.dart';

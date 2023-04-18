@@ -1,7 +1,7 @@
-import 'package:clean_architecture_app/features/posts/domain/entities/post.dart';
-import 'package:clean_architecture_app/features/posts/presentation/bloc/add_update_delete_posts/add_update_delete_posts_bloc.dart';
-import 'package:clean_architecture_app/features/posts/presentation/widgets/add_update_post_page/submit_button.dart';
-import 'package:clean_architecture_app/features/posts/presentation/widgets/add_update_post_page/text_form_field_widget.dart';
+import '../../../domain/entities/post.dart';
+import '../../bloc/add_update_delete_posts/add_update_delete_posts_bloc.dart';
+import 'submit_button.dart';
+import 'text_form_field_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
