@@ -1,9 +1,9 @@
 import 'dart:convert';
-import '../../../../core/error/exceptions.dart';
-import '../models/post_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/retry.dart';
+import '../../../../core/error/exceptions.dart';
+import '../models/post_model.dart';
 
 abstract class PostRemoteDataSource {
   Future<List<PostModel>> getAllPosts();

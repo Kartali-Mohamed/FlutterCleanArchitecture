@@ -1,9 +1,9 @@
 import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
 import '../../../../../core/error/failures.dart';
 import '../../../../../core/strings/failures.dart';
 import '../../../domain/entities/post.dart';
 import '../../../domain/usecases/get_all_posts.dart';
-import 'package:equatable/equatable.dart';
 
 part 'posts_event.dart';
 part 'posts_state.dart';

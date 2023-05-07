@@ -1,4 +1,6 @@
 import 'package:bloc/bloc.dart';
+import 'package:dartz/dartz.dart';
+import 'package:equatable/equatable.dart';
 import '../../../../../core/error/failures.dart';
 import '../../../../../core/strings/failures.dart';
 import '../../../../../core/strings/messages.dart';
@@ -6,8 +8,6 @@ import '../../../domain/entities/post.dart';
 import '../../../domain/usecases/add_post.dart';
 import '../../../domain/usecases/delete_post.dart';
 import '../../../domain/usecases/update_post.dart';
-import 'package:dartz/dartz.dart';
-import 'package:equatable/equatable.dart';
 
 part 'add_update_delete_posts_event.dart';
 part 'add_update_delete_posts_state.dart';

@@ -1,7 +1,7 @@
+import 'package:dartz/dartz.dart';
 import '../../../../core/error/failures.dart';
 import '../entities/post.dart';
 import '../repositories/post_repository.dart';
-import 'package:dartz/dartz.dart';
 
 class GetAllPostsUseCase {
   final PostRepository repositories;

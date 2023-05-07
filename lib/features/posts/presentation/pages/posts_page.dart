@@ -1,10 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/helper.dart';
 import '../../../../core/widget/loading_widget.dart';
 import '../bloc/posts/posts_bloc.dart';
 import '../widgets/posts_page/message_display_widget.dart';
 import '../widgets/posts_page/post_list_widget.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'add_update_post_page.dart';
 
 class PostsPage extends StatelessWidget {
@@ -16,10 +16,7 @@ class PostsPage extends StatelessWidget {
       appBar: AppBar(title: const Text('Posts')),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).push(MaterialPageRoute(
-              builder: (_) => const AddUpdatePostPage(
-                    isUpdatePost: false,
-                  )));
+          context.push(const AddUpdatePostPage(isUpdatePost: false));
         },
         child: const Icon(Icons.add),
       ),

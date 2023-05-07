@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/app_theme.dart';
 import 'features/posts/presentation/bloc/add_update_delete_posts/add_update_delete_posts_bloc.dart';
 import 'features/posts/presentation/bloc/posts/posts_bloc.dart';
 import 'features/posts/presentation/pages/posts_page.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'injection_container.dart' as di;
 
 void main() async {

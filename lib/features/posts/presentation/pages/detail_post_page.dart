@@ -1,3 +1,4 @@
+import '../../../../core/helper.dart';
 import '../../../../core/util/snackbar_message.dart';
 import '../../../../core/widget/loading_widget.dart';
 import '../../domain/entities/post.dart';
@@ -33,13 +34,10 @@ class DetailPostPage extends StatelessWidget {
               ),
               EditDeleteButtonWidget(
                   onEdit: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (_) => AddUpdatePostPage(
-                                  isUpdatePost: true,
-                                  post: post,
-                                )));
+                    context.push(AddUpdatePostPage(
+                      isUpdatePost: true,
+                      post: post,
+                    ));
                   },
                   onDelete: () => deleteDialog(context)),
             ],
@@ -59,11 +57,9 @@ class DetailPostPage extends StatelessWidget {
               if (state is DoneMessagePostsState) {
                 SnackBarMessage().showSuccessSnackBar(
                     message: state.message, context: context);
-                Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (_) => const PostsPage()),
-                    (route) => false);
+                context.pushAndRemoveUntil(const PostsPage());
               } else if (state is ErrorPostsState) {
-                Navigator.of(context).pop();
+                context.pop();
                 SnackBarMessage().showErrorSnackBar(
                     message: state.message, context: context);
               }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
+import '../../../../../core/helper.dart';
 import '../../bloc/add_update_delete_posts/add_update_delete_posts_bloc.dart';
 
 class DeleteAlertDialogWidget extends StatelessWidget {
@@ -15,7 +15,7 @@ class DeleteAlertDialogWidget extends StatelessWidget {
       actions: [
         TextButton(
             onPressed: () {
-              Navigator.of(context).pop();
+              context.pop();
             },
             child: const Text("No")),
         TextButton(

@@ -1,3 +1,6 @@
+import 'package:get_it/get_it.dart';
+import 'package:internet_connection_checker/internet_connection_checker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'core/network/network_info.dart';
 import 'features/posts/data/datasources/post_local_datasource.dart';
 import 'features/posts/data/datasources/post_remote_datasource.dart';
@@ -9,9 +12,6 @@ import 'features/posts/domain/usecases/get_all_posts.dart';
 import 'features/posts/domain/usecases/update_post.dart';
 import 'features/posts/presentation/bloc/add_update_delete_posts/add_update_delete_posts_bloc.dart';
 import 'features/posts/presentation/bloc/posts/posts_bloc.dart';
-import 'package:get_it/get_it.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 final sl = GetIt.instance;
 

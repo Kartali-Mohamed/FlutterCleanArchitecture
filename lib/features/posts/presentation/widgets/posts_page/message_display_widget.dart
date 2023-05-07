@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../../core/helper.dart';
 
 class MessageDisplayWidget extends StatelessWidget {
   final String message;
@@ -8,7 +9,7 @@ class MessageDisplayWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height / 3,
+      height: context.screenHeight / 3,
       child: Center(
           child: SingleChildScrollView(
         child: Text(

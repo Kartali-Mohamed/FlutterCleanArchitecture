@@ -1,6 +1,6 @@
-import '../repositories/post_repository.dart';
-import '../../../../core/error/failures.dart';
 import 'package:dartz/dartz.dart';
+import '../../../../core/error/failures.dart';
+import '../repositories/post_repository.dart';
 
 class DeletePostUseCase {
   final PostRepository repositories;

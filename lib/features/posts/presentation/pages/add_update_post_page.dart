@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../core/helper.dart';
 import '../../../../core/util/snackbar_message.dart';
 import '../../../../core/widget/loading_widget.dart';
 import '../../domain/entities/post.dart';
 import '../bloc/add_update_delete_posts/add_update_delete_posts_bloc.dart';
-import 'posts_page.dart';
 import '../widgets/add_update_post_page/form_widget.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'posts_page.dart';
 
 class AddUpdatePostPage extends StatelessWidget {
   final bool isUpdatePost;
@@ -25,9 +26,7 @@ class AddUpdatePostPage extends StatelessWidget {
               if (state is DoneMessagePostsState) {
                 SnackBarMessage().showSuccessSnackBar(
                     message: state.message, context: context);
-                Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (_) => const PostsPage()),
-                    (route) => false);
+                context.pushAndRemoveUntil(const PostsPage());
               } else if (state is ErrorPostsState) {
                 SnackBarMessage().showErrorSnackBar(
                     message: state.message, context: context);
