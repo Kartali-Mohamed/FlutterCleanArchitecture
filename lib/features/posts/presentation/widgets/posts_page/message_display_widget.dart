@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/helper.dart';
+import '../../../../../helpers/helper.dart';
 
 class MessageDisplayWidget extends StatelessWidget {
   final String message;

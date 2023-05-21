@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/helper.dart';
+import '../../../../helpers/helper.dart';
 import '../../../../core/widget/loading_widget.dart';
 import '../bloc/posts/posts_bloc.dart';
 import '../widgets/posts_page/message_display_widget.dart';

@@ -1,4 +1,4 @@
-import '../../../../core/helper.dart';
+import '../../../../helpers/helper.dart';
 import '../../../../core/util/snackbar_message.dart';
 import '../../../../core/widget/loading_widget.dart';
 import '../../domain/entities/post.dart';
