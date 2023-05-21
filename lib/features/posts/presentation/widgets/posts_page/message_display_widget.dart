@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../helpers/helper.dart';
 
 class MessageDisplayWidget extends StatelessWidget {
@@ -14,7 +15,7 @@ class MessageDisplayWidget extends StatelessWidget {
           child: SingleChildScrollView(
         child: Text(
           message,
-          style: const TextStyle(fontSize: 25),
+          style: TextStyle(fontSize: 25.sp),
           textAlign: TextAlign.center,
         ),
       )),

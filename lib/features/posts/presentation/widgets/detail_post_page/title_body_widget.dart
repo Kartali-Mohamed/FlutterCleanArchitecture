@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TitleBodyWidget extends StatelessWidget {
   final String text;
@@ -9,11 +10,11 @@ class TitleBodyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8),
+      padding: EdgeInsets.symmetric(horizontal: 8.h, vertical: 8.w),
       child: Text(
         text,
         style: TextStyle(
-          fontSize: isTitle ? 20 : 16,
+          fontSize: isTitle ? 19.sp : 15.sp,
           fontWeight: isTitle ? FontWeight.bold : null,
         ),
       ),

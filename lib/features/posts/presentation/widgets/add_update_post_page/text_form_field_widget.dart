@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextFormFieldWidget extends StatelessWidget {
   final TextEditingController? controller;
@@ -14,7 +15,7 @@ class TextFormFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      padding: EdgeInsets.symmetric(vertical: 10.w, horizontal: 20.h),
       child: TextFormField(
         controller: controller,
         validator: (val) => val!.isEmpty ? "$name can't be empty" : null,

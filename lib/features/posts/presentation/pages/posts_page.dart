@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../helpers/helper.dart';
 import '../../../../core/widget/loading_widget.dart';
 import '../bloc/posts/posts_bloc.dart';
@@ -21,7 +22,7 @@ class PostsPage extends StatelessWidget {
         child: const Icon(Icons.add),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 10.w),
         child: BlocBuilder<PostsBloc, PostsState>(builder: ((context, state) {
           if (state is LoadingPostsState) {
             return const LoadingWidget();

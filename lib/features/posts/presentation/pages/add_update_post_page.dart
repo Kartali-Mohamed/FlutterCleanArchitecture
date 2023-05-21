@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../helpers/helper.dart';
 import '../../../../core/util/snackbar_message.dart';
 import '../../../../core/widget/loading_widget.dart';
@@ -19,7 +20,7 @@ class AddUpdatePostPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: Text(isUpdatePost ? "Edit Post" : "Add Post")),
         body: Padding(
-          padding: const EdgeInsets.all(10),
+          padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 10.w),
           child:
               BlocConsumer<AddUpdateDeletePostsBloc, AddUpdateDeletePostsState>(
             listener: (context, state) {

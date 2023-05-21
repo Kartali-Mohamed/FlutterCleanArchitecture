@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../helpers/helper.dart';
 import '../../../domain/entities/post.dart';
 import '../../pages/detail_post_page.dart';
@@ -16,13 +17,13 @@ class PostListWidget extends StatelessWidget {
           leading: Text("${posts[index].id}"),
           title: Text(
             posts[index].title,
-            style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.bold),
           ),
           subtitle: Text(
             posts[index].body,
-            style: const TextStyle(fontSize: 16),
+            style: TextStyle(fontSize: 14.sp),
           ),
-          contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+          contentPadding: EdgeInsets.symmetric(horizontal: 10.h),
           onTap: () {
             context.push(DetailPostPage(post: posts[index]));
           },
