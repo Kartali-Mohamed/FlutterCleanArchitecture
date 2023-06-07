@@ -1,7 +1,8 @@
+import 'package:clean_architecture_app/core/util/hex_color.dart';
 import 'package:flutter/material.dart';
 
-final primaryColor = Color(0xff082659);
-final secondaryColor = Color(0xff51eec2);
+final primaryColor = HexColor("082659");
+final secondaryColor = HexColor("51eec2");
 
 final appTheme = ThemeData(
     appBarTheme: AppBarTheme(
